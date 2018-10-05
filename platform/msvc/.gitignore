@@ -1,0 +1,5 @@
+prototyping/
+projects/*
+
+!projects/prototyping.vcxproj
+!projects/prototyping.vcxproj.filters

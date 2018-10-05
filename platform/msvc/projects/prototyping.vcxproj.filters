@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="view">
+      <UniqueIdentifier>{9dd545b3-103e-49bf-916a-02f3570b2db6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trigger">
+      <UniqueIdentifier>{2acaea3c-a280-40ef-9b60-2d8454f776ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trigger\event">
+      <UniqueIdentifier>{999b48a3-87aa-4afa-9de9-0fcc81df4e6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trigger\condition">
+      <UniqueIdentifier>{06eb5dd9-408c-41a6-a846-e49ca99799ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trigger\action">
+      <UniqueIdentifier>{b2588fa9-dec7-4e6b-bb04-2236084a04ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dataset">
+      <UniqueIdentifier>{f04d1135-26f4-44cc-b9f4-d45e1bf203c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\trigger">
+      <UniqueIdentifier>{31e0ccfe-49e3-4b50-a1da-06bc5073fc75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\prototyping\WxLibraryPage.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\ArrangeNodeOP.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\CompTrigger.h">
+      <Filter>dataset</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\WxToolbarPanel.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\WxEditCaseDialog.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\trigger\Print.h">
+      <Filter>trigger\action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\trigger\OnMouseMove.h">
+      <Filter>trigger\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\trigger\Action.h">
+      <Filter>trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\trigger\Condition.h">
+      <Filter>trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\trigger\Event.h">
+      <Filter>trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\trigger\Trigger.h">
+      <Filter>trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\trigger\typedef.h">
+      <Filter>trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\trigger\Factory.h">
+      <Filter>trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\view\WxPrint.h">
+      <Filter>view\trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\trigger\OnMouseDown.h">
+      <Filter>trigger\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prototyping\trigger\OnMouseUp.h">
+      <Filter>trigger\event</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\WxLibraryPage.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ArrangeNodeOP.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\CompTrigger.cpp">
+      <Filter>dataset</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\WxToolbarPanel.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\WxEditCaseDialog.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\trigger\Print.cpp">
+      <Filter>trigger\action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\trigger\OnMouseMove.cpp">
+      <Filter>trigger\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\trigger\Event.cpp">
+      <Filter>trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\trigger\Action.cpp">
+      <Filter>trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\trigger\Factory.cpp">
+      <Filter>trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\view\WxPrint.cpp">
+      <Filter>view\trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\trigger\OnMouseDown.cpp">
+      <Filter>trigger\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\trigger\OnMouseUp.cpp">
+      <Filter>trigger\event</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

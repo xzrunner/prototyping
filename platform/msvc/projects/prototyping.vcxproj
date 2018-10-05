@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\prototyping\ArrangeNodeOP.h" />
+    <ClInclude Include="..\..\..\include\prototyping\CompTrigger.h" />
+    <ClInclude Include="..\..\..\include\prototyping\trigger\Action.h" />
+    <ClInclude Include="..\..\..\include\prototyping\trigger\Factory.h" />
+    <ClInclude Include="..\..\..\include\prototyping\trigger\Condition.h" />
+    <ClInclude Include="..\..\..\include\prototyping\trigger\Event.h" />
+    <ClInclude Include="..\..\..\include\prototyping\trigger\OnMouseDown.h" />
+    <ClInclude Include="..\..\..\include\prototyping\trigger\OnMouseMove.h" />
+    <ClInclude Include="..\..\..\include\prototyping\trigger\OnMouseUp.h" />
+    <ClInclude Include="..\..\..\include\prototyping\trigger\Print.h" />
+    <ClInclude Include="..\..\..\include\prototyping\trigger\Trigger.h" />
+    <ClInclude Include="..\..\..\include\prototyping\trigger\typedef.h" />
+    <ClInclude Include="..\..\..\include\prototyping\view\WxPrint.h" />
+    <ClInclude Include="..\..\..\include\prototyping\WxEditCaseDialog.h" />
+    <ClInclude Include="..\..\..\include\prototyping\WxLibraryPage.h" />
+    <ClInclude Include="..\..\..\include\prototyping\WxToolbarPanel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\ArrangeNodeOP.cpp" />
+    <ClCompile Include="..\..\..\source\trigger\Action.cpp" />
+    <ClCompile Include="..\..\..\source\trigger\Factory.cpp" />
+    <ClCompile Include="..\..\..\source\trigger\Event.cpp" />
+    <ClCompile Include="..\..\..\source\trigger\OnMouseDown.cpp" />
+    <ClCompile Include="..\..\..\source\trigger\OnMouseMove.cpp" />
+    <ClCompile Include="..\..\..\source\trigger\OnMouseUp.cpp" />
+    <ClCompile Include="..\..\..\source\trigger\Print.cpp" />
+    <ClCompile Include="..\..\..\source\view\WxPrint.cpp" />
+    <ClCompile Include="..\..\..\source\WxEditCaseDialog.cpp" />
+    <ClCompile Include="..\..\..\source\CompTrigger.cpp" />
+    <ClCompile Include="..\..\..\source\WxLibraryPage.cpp" />
+    <ClCompile Include="..\..\..\source\WxToolbarPanel.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>3.prototyping</ProjectName>
+    <ProjectGuid>{E9304BBA-36CF-4109-A308-906DC0767CCC}</ProjectGuid>
+    <RootNamespace>prototyping</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26730.12</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\prototyping\x86\Debug\</OutDir>
+    <IntDir>..\prototyping\x86\Debug\obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\prototyping\x86\Release\</OutDir>
+    <IntDir>..\prototyping\x86\Release\obj\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\cu\src;..\..\..\..\sm\src\sm;..\..\..\..\gtxt\src\gtxt;..\..\..\..\guard\include;..\..\..\..\cpputil\include;..\..\..\..\node0\include;..\..\..\..\node2\include;..\..\..\..\painting2\include;..\..\..\..\easyeditor0\include;..\..\..\..\easyeditor2\include;..\..\..\..\moon\include;..\..\..\..\external\boost\include;..\..\..\..\external\rapidjson\include;..\..\..\..\external\lua\include;..\..\..\..\external-editor\wx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\cu\src;..\..\..\..\sm\src\sm;..\..\..\..\gtxt\src\gtxt;..\..\..\..\guard\include;..\..\..\..\cpputil\include;..\..\..\..\node0\include;..\..\..\..\node2\include;..\..\..\..\painting2\include;..\..\..\..\easyeditor0\include;..\..\..\..\easyeditor2\include;..\..\..\..\moon\include;..\..\..\..\external\boost\include;..\..\..\..\external\rapidjson\include;..\..\..\..\external\lua\include;..\..\..\..\external-editor\wx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
