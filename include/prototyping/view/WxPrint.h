@@ -3,6 +3,8 @@
 #include <wx/panel.h>
 #include <wx/textctrl.h>
 
+#include <memory>
+
 namespace pt
 {
 namespace trigger { class Print; }
