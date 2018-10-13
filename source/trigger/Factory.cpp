@@ -1,4 +1,6 @@
 #include "prototyping/trigger/Factory.h"
+#include "prototyping/trigger/Action.h"
+#include "prototyping/trigger/Event.h"
 
 namespace pt
 {
@@ -19,7 +21,7 @@ void Factory::RegisterEvent(cpputil::ClassInfo<Event>* ci)
 	}
 }
 
-EventPtr Factory::NewEvent(const std::string& class_name)
+std::unique_ptr<Event> Factory::NewEvent(const std::string& class_name)
 {
 	auto itr = m_event_map.find(class_name);
 	if (itr == m_event_map.end()) {
@@ -37,7 +39,7 @@ void Factory::RegisterAction(cpputil::ClassInfo<Action>* ci)
 	}
 }
 
-ActionPtr Factory::NewAction(const std::string& class_name)
+std::unique_ptr<Action> Factory::NewAction(const std::string& class_name)
 {
 	auto itr = m_action_map.find(class_name);
 	if (itr == m_action_map.end()) {

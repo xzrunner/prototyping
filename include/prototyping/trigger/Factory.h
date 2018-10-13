@@ -16,10 +16,10 @@ class Factory
 {
 public:
 	void RegisterEvent(cpputil::ClassInfo<Event>* ci);
-	EventPtr NewEvent(const std::string& class_name);
+	std::unique_ptr<Event> NewEvent(const std::string& class_name);
 
 	void RegisterAction(cpputil::ClassInfo<Action>* ci);
-	ActionPtr NewAction(const std::string& class_name);
+	std::unique_ptr<Action> NewAction(const std::string& class_name);
 
 	auto& GetAllEvents() const { return m_event_map; }
 

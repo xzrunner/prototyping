@@ -56,7 +56,8 @@ WxEditCaseDialog::WxActionTree::WxActionTree(wxWindow* parent, WxCaseTree* case_
 void WxEditCaseDialog::WxActionTree::OnActionActivated(wxTreeEvent& event)
 {
 	auto name = static_cast<Item*>(GetItemData(event.GetItem()))->class_name;
-	auto action = trigger::Factory::Instance()->NewAction(name);
+	std::shared_ptr<trigger::Action> action =
+		trigger::Factory::Instance()->NewAction(name);
 	if (action) {
 		m_dirty = true;
 		m_case.actions.push_back(action);

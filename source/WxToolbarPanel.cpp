@@ -147,7 +147,8 @@ void WxToolbarPanel::OnAddPress(wxCommandEvent& event)
 		m_node->AddUniqueComp<CompTrigger>();
 	}
 	auto& ct = m_node->GetUniqueComp<CompTrigger>();
-	auto e = trigger::Factory::Instance()->NewEvent(data->name);
+	std::shared_ptr<trigger::Event> e
+		= trigger::Factory::Instance()->NewEvent(data->name);
 	ct.GetImpl().AddEvent(e);
 	m_event_tree->InsertEvent(e);
 }
